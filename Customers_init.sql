@@ -5,14 +5,14 @@ create table netology.customers
     name         char(128),
     surname      char(128),
     age          int,
-    phone_number int unique default 0
+    phone_number char(128) unique default '0'
 );
 
 insert into netology.customers(name, surname, age, phone_number)
-values ('Ivan', 'Sokolov', 28, 101),
-       ('Alexey', 'Golubev', 25, 102),
-       ('Petr', 'Orlov', 29, 103),
-       ('Alexey', 'Voronov', 31, 104),
-       ('Mikhail', 'Drozdov', 30, 105),
-       ('Alexey', 'Lebedev', 24, 106),
-       ('Leonid', 'Sorokin', 26, 107);
+values ('Ivan', 'Sokolov', 28, '101'),
+       ('Alexey', 'Golubev', 25, '102'),
+       ('Petr', 'Orlov', 29, '103'),
+       ('Alexey', 'Voronov', 31, '104'),
+       ('Mikhail', 'Drozdov', 30, '105'),
+       ('Alexey', 'Lebedev', 24, '106'),
+       ('Leonid', 'Sorokin', 26, '107');
